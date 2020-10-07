@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+
+{%block content %}
+
+<h1><center>Jade</center></h1>
+<p> Edenia's greatest assasssin and bodyguard for the throne of outworld, Jade uses her bo staff and razer rangs to control the pace of a fight
+    and frustrate her opponent.
+</p>
+<p>Fighting Game Lingo:</p>
+        <p>OH: Overhead</p>
+        <p>FB: Fatal Blow</p>
+        <p>B: Back</p>
+        <p>F: Forward</p>
+        <p>D: Down</p>
+        <p>U: Up</p>
+        <p>AMP: Amplified</p>
+        <p>HOLD: Hold a button to extend a move</p>
+        <p> Basic Attacks</p>
+    <center>
+        <table>
+            <tr>
+                <th>Move Name</th>
+                <th>Type</th>
+                <th>Buttons</th>
+                <th>Startup</th>
+                <th>Active</th>
+                <th>Recovery</th>
+                <th>Hit Advantage</th>
+                <th>Block Advantage</th>
+                <th> Flawless Block Advantage</th>
+            </tr>
+        
+    {% for basic in JadeBasicFrames %}
+    
+    
+        <tr>
+            <td>{{basic.Move}}</td>
+            <td>{{basic.MoveType}}</td>
+            <td>{{basic.Buttons}}</td>
+            <td>{{basic.Startup}}</td>
+            <td>{{basic.Active}}</td>
+            <td>{{basic.Recovery}}</td>
+            <td>{{basic.HitAdv}}</td>
+            <td>{{basic.BlockAdv}}</td>
+            <td>{{basic.FBlockAdv}}</td>
+        </tr>
+       
+    {% endfor %}
+</table>
+</center>
+<center>
+    <p>String Attacks</p>
+    <table>
+        <tr>
+            <th>Move Name</th>
+            <th>Type</th>
+            <th>Buttons</th>
+            <th>Startup</th>
+            <th>Active</th>
+            <th>Recovery</th>
+            <th>Hit Advantage</th>
+            <th>Block Advantage</th>
+            <th> Flawless Block Advantage</th>
+        </tr>
+
+    {% for string in JadeStringFrames %}
+    
+    
+        <tr>
+            <td>{{string.Move}}</td>
+            <td>{{string.MoveType}}</td>
+            <td>{{string.Buttons}}</td>
+            <td>{{string.Startup}}</td>
+            <td>{{string.Active}}</td>
+            <td>{{string.Recovery}}</td>
+            <td>{{string.HitAdv}}</td>
+            <td>{{string.BlockAdv}}</td>
+            <td>{{string.FBlockAdv}}</td>
+        </tr>
+       
+    {% endfor %}
+    </table>
+    </center>
+    <center>
+    <p>Special Attacks</p>
+    <table>
+        <tr>
+            <th>Move Name</th>
+            <th>Type</th>
+            <th>Buttons</th>
+            <th>Startup</th>
+            <th>Active</th>
+            <th>Recovery</th>
+            <th>Hit Advantage</th>
+            <th>Block Advantage</th>
+            <th> Flawless Block Advantage</th>
+        </tr>
+
+    {% for special in JadeSpecialFrames %}
+    
+    
+        <tr>
+            <td>{{special.Move}}</td>
+            <td>{{special.MoveType}}</td>
+            <td>{{special.Buttons}}</td>
+            <td>{{special.Startup}}</td>
+            <td>{{special.Active}}</td>
+            <td>{{special.Recovery}}</td>
+            <td>{{special.HitAdv}}</td>
+            <td>{{special.BlockAdv}}</td>
+            <td>{{special.FBlockAdv}}</td>
+        </tr>
+       
+    {% endfor %}
+    </table>
+    
+    <p><b> VARIATION SPECIFIC MOVES</b></p>
+    <p>Emerald Defender</p>
+</center>
+    <center>
+    <table>
+        <tr>
+            <th>Move Name</th>
+            <th>Type</th>
+            <th>Buttons</th>
+            <th>Startup</th>
+            <th>Active</th>
+            <th>Recovery</th>
+            <th>Hit Advantage</th>
+            <th>Block Advantage</th>
+            <th> Flawless Block Advantage</th>
+        </tr>
+
+    {% for emerald in JadeEmeraldFrames %}
+    
+    
+        <tr>
+            <td>{{emerald.Move}}</td>
+            <td>{{emerald.MoveType}}</td>
+            <td>{{emerald.Buttons}}</td>
+            <td>{{emerald.Startup}}</td>
+            <td>{{emerald.Active}}</td>
+            <td>{{emerald.Recovery}}</td>
+            <td>{{emerald.HitAdv}}</td>
+            <td>{{emerald.BlockAdv}}</td>
+            <td>{{emerald.FBlockAdv}}</td>
+        </tr>
+       
+    {% endfor %}
+    </table>
+    
+    <p>KRUSHING BLOWS:</p>
+    <p>You play Emerald Defender by blah</p>
+</center>
+    <center>
+    <p>Jaded</p>
+    
+    <table>
+        <tr>
+            <th>Move Name</th>
+            <th>MoveType</th>
+            <th>Buttons</th>
+            <th>Startup</th>
+            <th>Active</th>
+            <th>Recovery</th>
+            <th>Hit Advantage</th>
+            <th>Block Advantage</th>
+            <th> Flawless Block Advantage</th>
+        </tr>
+
+    {% for jaded in JadeJadedFrames %}
+    
+    
+        <tr>
+            <td>{{jaded.Move}}</td>
+            <td>{{jaded.MoveType}}</td>
+            <td>{{jaded.Buttons}}</td>
+            <td>{{jaded.Startup}}</td>
+            <td>{{jaded.Active}}</td>
+            <td>{{jaded.Recovery}}</td>
+            <td>{{jaded.HitAdv}}</td>
+            <td>{{jaded.BlockAdv}}</td>
+            <td>{{jaded.FBlockAdv}}</td>
+        </tr>
+       
+    {% endfor %}
+    </table>
+    
+    <p>KRUSHING BLOWS:</p>
+    <p>You play Jaded by blah blah</p>
+    </center>
+
+
+
+
+
+     <p><a href = "{% url 'home' %}">Home </a></p>
+     <p><a href = "{% url 'character' %}">Character </a></p>
+     <p><a href = "{% url 'frames' %}">Frames </a></p>
+
+{% endblock %}

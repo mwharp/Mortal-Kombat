@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{%block content %}
+
+
+<h1><center> Choose your Kombatant</center></h1>
+
+<h2><center><button class= "button button1"><a href = "{% url 'KanoHome' %}">Kano</center></a></button></h2>
+
+<h2><center><button class = "button button2"><a href = "{%url 'NightwolfHome' %}">Nightwolf</a></center></button></h2>
+
+<h2><center><button class= "button button3"><a href = "{%url 'JadeHome' %}">Jade</a></button></center></button></h2>
+
+<h2><center><button class= "button button4"><a href = "{%url 'SubZeroHome' %}">Sub Zero</a></center></button></h2>
+
+<p><center><a href = "{% url 'home' %}">Home </center></a></p>
+
+{% endblock %}

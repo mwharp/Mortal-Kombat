@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{%block content %}
+
+<center>
+<h1>MK11 Lingo:</h1>
+<p><b>50/50:</b></p>
+<p><b>Anti-Air:</b> a move that counters a jump/jump in</p>
+<p><b>Chip Damage</b>: damage a player recieves from an opponent while blocking</p>
+<p><b>Corner</b>: the two spots at the end of each side of the stage</p>
+<p><b>DOT Damage</b>: Damage Over Time, damage that drains health over time.</p>
+<p><b>Fatal Blow</b>: a powerful move that is avaliable once a player's lifebar falls below 30% that is unbreakable and causes major damage
+     , can only be used once per match on hit</p>
+<p><b>Krushing Blow(KB)</b>: a move that triggers if certain requirements are met, can lead to launchers, DOT damage, or extra damage. </p>
+<p><b>Low Attack</b>: an attack that must be blocked low to be suucessfully blocked</p>
+<p><b>Neutral Game: where neither player has advanatge over another. Both trying to find an opening</b></p>
+<p><b>Overhead Attack</b>: an attack that must be blocked high to be successfully blocked</p>
+<p><b>Parry</b>: a specific move that counters an opponents attack</p>
+<p><b>Punish</b>: attacking an opponent who is currently in minus frames(unable to input a button) </p>
+<p><b>Roll</b>:used to roll forward or backward to get better positioning on an opponent a roll that is invincibleto all moves except for throws.</p>
+<p><b>Throw</b>:an attack that grabs the opponent and is unblockable, can be ducked or jumped out of for a punish</p>
+<p><b>Wakeup/Getup</b>:a move made when a knocked down player gets out of minus frames</p>
+<p><b>Whiff</b>: when an attack misses an opponent</p>
+<p><b>Whiff Punish</b>: when a player punishes an opponent when the opponent whiffs an attack</p>
+
+
+<h1>What are frames?</h1>
+
+<p> Frames are absolutley esstential when it comes to fighting games, Pros use this data to learn how to counter their opponents every move, and optimize their
+    play to the fullest
+</p>
+
+<h2> Types of Frames:</h2>
+
+<p><b>Startup</b>: the number of frames it takes for the move to hit an opponent. Startup Frames are the type of frames that begin a move animation</p>
+<b><p>Example: </b>You decide to input a button that starts up in 9 frames. Your opponent inputs a button that starts up at 11 frames, 
+if you and your opponent press these buttons on the exact same frame, you would hit your opponent rather than the opposite due to the fact
+that your 9 frame move started up faster than their 11 frame start up frame move </p>
+<p><b>Active</b>: the number of frames the move can hit an oppponent. The frames that occur when startup frames finish </p>
+<p><b>Example: </b>Kano's F4(Wheel Kick) has 4 active frames, once the move starts up in 25 frames, the move will be able to hit the opponent
+for 4 frames,depending on this move hits an opponent, is blocked, or whiffs will determine what kind of frames will begin once the active frames are done.</p>
+<p><b>Recovery</b>: the number of frames the move takes to recover </p>
+<p><b>Hit Advantage</b>: the number of frames that the player can input a button press before an opponent</p>
+<p><b>Block Advantage</b>: the number of frames that the player can input a button before or after an opponent depending on if the move is plus or minus frames</p>
+<p><b>Flawless Block Advantage</b>: the number of frames that the player can input a button before or after a FLAWLESS BLOCK</p>
+</center>
+
+
+<p><a href = "{% url 'home' %}">Home </a></p>
+
+{% endblock %}

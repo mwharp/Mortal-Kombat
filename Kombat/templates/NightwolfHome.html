@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{%block content %}
+
+<h1><center>Nightwolf</center></h1>
+<p>The Great Spirit's chosen fighter, Nightwolf uses the powers gifted onto him to protect his home and his tribe.
+     With fast buttons and great special moves, Nighwolf can catch his opponent off-guard to convert into major damage.</p>
+     <p>Fighting Game Lingo:</p>
+        <p>OH: Overhead</p>
+        <p>FB: Fatal Blow</p>
+        <p>B: Back</p>
+        <p>F: Forward</p>
+        <p>D: Down</p>
+        <p>U: Up</p>
+        <p>AMP: Amplified</p>
+        <p>Damage Buff: Buff that increases damage</p>
+        <p>Projectile Parry: reflects an opponents projectile</p>
+        <p>Teleport: teleports player behind opponent</p>
+        <center>
+     <p> Basic Attacks:</p>
+     
+     <table>
+          <tr>
+              <th>Move Name</th>
+              <th>Type</th>
+              <th>Buttons</th>
+              <th>Startup</th>
+              <th>Active</th>
+              <th>Recovery</th>
+              <th>Hit Advantage</th>
+              <th>Block Advantage</th>
+              <th> Flawless Block Advantage</th>
+          </tr>
+      
+     {% for basic in NightwolfBasicFrames %}
+  
+  
+      <tr>
+          <td>{{basic.Move}}</td>
+          <td>{{basic.MoveType}}</td>
+          <td>{{basic.Buttons}}</td>
+          <td>{{basic.Startup}}</td>
+          <td>{{basic.Active}}</td>
+          <td>{{basic.Recovery}}</td>
+          <td>{{basic.HitAdv}}</td>
+          <td>{{basic.BlockAdv}}</td>
+          <td>{{basic.FBlockAdv}}</td>
+      </tr>
+     
+     {% endfor %}
+     </table>
+    </center>
+    <center>
+        <p>String Attacks</p>
+        <table>
+            <tr>
+                <th>Move Name</th>
+                <th>Type</th>
+                <th>Buttons</th>
+                <th>Startup</th>
+                <th>Active</th>
+                <th>Recovery</th>
+                <th>Hit Advantage</th>
+                <th>Block Advantage</th>
+                <th>Flawless Block Advantage</th>
+            </tr>
+    
+        {% for string in NightwolfStringFrames %}
+        
+        
+            <tr>
+                <td>{{string.Move}}</td>
+                <td>{{string.MoveType}}</td>
+                <td>{{string.Buttons}}</td>
+                <td>{{string.Startup}}</td>
+                <td>{{string.Active}}</td>
+                <td>{{string.Recovery}}</td>
+                <td>{{string.HitAdv}}</td>
+                <td>{{string.BlockAdv}}</td>
+                <td>{{string.FBlockAdv}}</td>
+            </tr>
+           
+        {% endfor %}
+        </table>
+        </center>
+        <center>
+        <p>Special Attacks</p>
+        <table>
+            <tr>
+                <th>Move Name</th>
+                <th>Type</th>
+                <th>Buttons</th>
+                <th>Startup</th>
+                <th>Active</th>
+                <th>Recovery</th>
+                <th>Hit Advantage</th>
+                <th>Block Advantage</th>
+                <th> Flawless Block Advantage</th>
+            </tr>
+    
+        {% for special in NightwolfSpecialFrames %}
+        
+        
+            <tr>
+                <td>{{special.Move}}</td>
+                <td>{{special.MoveType}}</td>
+                <td>{{special.Buttons}}</td>
+                <td>{{special.Startup}}</td>
+                <td>{{special.Active}}</td>
+                <td>{{special.Recovery}}</td>
+                <td>{{special.HitAdv}}</td>
+                <td>{{special.BlockAdv}}</td>
+                <td>{{special.FBlockAdv}}</td>
+            </tr>
+           
+        {% endfor %}
+        </table>
+        
+        <p><b> VARIATION SPECIFIC MOVES</b></p>
+        <p>Matoka Warrior</p>
+    </center>
+        <center>
+        <table>
+            <tr>
+                <th>Move Name</th>
+                <th>Type</th>
+                <th>Buttons</th>
+                <th>Startup</th>
+                <th>Active</th>
+                <th>Recovery</th>
+                <th>Hit Advantage</th>
+                <th>Block Advantage</th>
+                <th> Flawless Block Advantage</th>
+            </tr>
+    
+        {% for matoka in NightwolfMatokaFrames %}
+        
+        
+            <tr>
+                <td>{{matoka.Move}}</td>
+                <td>{{matoka.MoveType}}</td>
+                <td>{{matoka.Buttons}}</td>
+                <td>{{matoka.Startup}}</td>
+                <td>{{matoka.Active}}</td>
+                <td>{{matoka.Recovery}}</td>
+                <td>{{matoka.HitAdv}}</td>
+                <td>{{matoka.BlockAdv}}</td>
+                <td>{{matoka.FBlockAdv}}</td>
+            </tr>
+           
+        {% endfor %}
+        </table>
+        
+        <p>KRUSHING BLOWS:</p>
+        <p>You play Matoka Warrior by blah</p>
+    </center>
+        <center>
+        <p>Ancestral Gift</p>
+        
+        <table>
+            <tr>
+                <th>Move Name</th>
+                <th>MoveType</th>
+                <th>Buttons</th>
+                <th>Startup</th>
+                <th>Active</th>
+                <th>Recovery</th>
+                <th>Hit Advantage</th>
+                <th>Block Advantage</th>
+                <th> Flawless Block Advantage</th>
+            </tr>
+    
+        {% for ancestral in NightwolfAncestralFrames %}
+        
+        
+            <tr>
+                <td>{{ancestral.Move}}</td>
+                <td>{{ancestral.MoveType}}</td>
+                <td>{{ancestral.Buttons}}</td>
+                <td>{{ancestral.Startup}}</td>
+                <td>{{ancestral.Active}}</td>
+                <td>{{ancestral.Recovery}}</td>
+                <td>{{ancestral.HitAdv}}</td>
+                <td>{{ancestral.BlockAdv}}</td>
+                <td>{{ancestral.FBlockAdv}}</td>
+            </tr>
+           
+        {% endfor %}
+        </table>
+        
+        <p>KRUSHING BLOWS:</p>
+        <p>You play Ancestral Gift by blah blah</p>
+        </center>
+
+
+
+     <p><a href = "{% url 'home' %}">Home </a></p>
+     <p><a href = "{% url 'character' %}">Character </a></p>
+     <p><a href = "{% url 'frames' %}">Frames </a></p>
+{% endblock %}
