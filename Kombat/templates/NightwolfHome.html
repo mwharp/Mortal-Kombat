@@ -1,21 +1,26 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {%block content %}
 
 <h1><center>Nightwolf</center></h1>
+<center><img src = "{% static 'css/images/NightwolfVersus.png' %}"></center>
 <p>The Great Spirit's chosen fighter, Nightwolf uses the powers gifted onto him to protect his home and his tribe.
      With fast buttons and great special moves, Nighwolf can catch his opponent off-guard to convert into major damage.</p>
-     <p>Fighting Game Lingo:</p>
-        <p>OH: Overhead</p>
+     <center>
+
+        <img src = "{% static 'css/images/Controller.png' %}">
+        <p>Fighting Game Lingo:</p>
+        <p> OH: Overhead </p>
         <p>FB: Fatal Blow</p>
         <p>B: Back</p>
         <p>F: Forward</p>
         <p>D: Down</p>
         <p>U: Up</p>
         <p>AMP: Amplified</p>
-        <p>Damage Buff: Buff that increases damage</p>
-        <p>Projectile Parry: reflects an opponents projectile</p>
-        <p>Teleport: teleports player behind opponent</p>
+        <p>Buff: Armored Kano Ball/Damage Buff</p>
+        <p> Basic Attacks</p>
+    </center>
         <center>
      <p> Basic Attacks:</p>
      
@@ -152,6 +157,10 @@
         </table>
         
         <p>KRUSHING BLOWS:</p>
+        <p>Rising Blades(D2): Triggers if this attack <b>KOUNTERS </b> or <b>PUNISHES</b> a <b>HIGH ATTACK</b></p>
+        <p>Forward and Back Throw(1+3):Triggers if opponent failed <b>THROW ESCAPE</b>during previous <b>THROW.</b></p>
+        <p>Deadly Talon(312):Triggers if only the final move <b>HITS(2)</b></p>
+        <p>Rhino Charge Amplified (BF4AMP): Triggers when only the <b>AMPLIFIED</b> version <b> HITS </b>a <b>GROUNDED OPPONENT</b></p>
         <p>You play Matoka Warrior by blah</p>
     </center>
         <center>
@@ -189,6 +198,13 @@
         </table>
         
         <p>KRUSHING BLOWS:</p>
+        <p>Rising Blades(D2): Triggers if this attack <b> KOUNTERS </b> or <b> PUNISHES </b> a <b> HIGH ATTACK</b></p>
+        <p>Forward and Back Throw(1+3):Triggers if opponent failed <b>THROW ESCAPE</b> during previous<b> THROW.</b></p>
+        <p>Helmsplitter(221+3): Triggers if this <b>KOMBO ATTACK</b> is a <b> KOUNTER </b>or <b>PUNISH</b></p>
+        <p>Deadly Talon(312):Triggers if only the final move <b> HITS(2)</b></p>
+        <p>Tomahawk Swing(DBF3): Triggers if this attack is a <b> REVERSAL PUNISH </b> or <b> BREAKS ARMOR </b></p>
+        <p>Rhino Charge Amplified (BF4AMP): Triggers when only the <b> AMPLIFIED </b> version <b> HITS </b> a <b>GROUNDED OPPONENT</b></p>
+
         <p>You play Ancestral Gift by blah blah</p>
         </center>
 

@@ -1,11 +1,27 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {%block content %}
 
 <h1><center>Jade</center></h1>
+<center><img src = "{% static 'css/images/JadeVersus.png' %}"></center>
 <p> Edenia's greatest assasssin and bodyguard for the throne of outworld, Jade uses her bo staff and razer rangs to control the pace of a fight
     and frustrate her opponent.
 </p>
+
+<center>
+
+    <img src = "{% static 'css/images/Controller.png' %}">
+    <p>Fighting Game Lingo:</p>
+    <p> OH: Overhead </p>
+    <p>FB: Fatal Blow</p>
+    <p>B: Back</p>
+    <p>F: Forward</p>
+    <p>D: Down</p>
+    <p>U: Up</p>
+    <p>AMP: Amplified</p>
+    <p>Buff: Armored Kano Ball/Damage Buff</p>
+    <p> Basic Attacks</p>
+</center>
 <p>Fighting Game Lingo:</p>
         <p>OH: Overhead</p>
         <p>FB: Fatal Blow</p>
@@ -150,6 +166,11 @@
     </table>
     
     <p>KRUSHING BLOWS:</p>
+    <p>Rising Staff(D2):Triggers if this attack <b> KOUNTERS </b> or <b> PUNISHES </b> a <b>HIGH ATTACK</b></p>
+    <p>Toward Throw(F1+3):Triggers if opponent failed <b> THROW ESCAPE </b>during previous <b> THROW.</b></p>
+    <p>Baited(124):Triggers if second hit(2) of the <b> KOMBO </b> is the first to <b>HIT</b></p>
+    <p>Temptation(DB4):Triggers if Temptation has been AMPLIFIED TWICE preivously in the match.</p>
+    <p>Blazing Nitro Kick(DF4):Triggers if this move hits the opponent twice in a row or <b>BREAKS ARMOR</b></p>
     <p>You play Emerald Defender by blah</p>
 </center>
     <center>
@@ -188,6 +209,12 @@
     
     <p>KRUSHING BLOWS:</p>
     <p>You play Jaded by blah blah</p>
+    <p>Rising Staff(D2):Triggers if this attack <b>KOUNTERS</b> or <b>PUNISHES</b> a <b>HIGH ATTACK</b></p>
+    <p>Toward Throw(F1+3):Triggers if opponent failed <b>THROW ESCAPE</b> during previous <b>THROW.</b></p>
+    <p>Baited(124):Triggers if second hit(2) of the <b> KOMBO </b>is the first to <b>HIT</b></p>
+    <p>Temptation(DB4):Triggers if Temptation has been AMPLIFIED TWICE preivously in the match.</p>
+    <p>Blazing Nitro Kick(DF4):Triggers if this moves hits the opponent twice in a row or <b>BREAKS ARMOR</b></p>
+    <p>Pole Valut Amplified(BF3AMP): Triggers if opponent is <b> HIT </b>after running a great distance.</p>
     </center>
 
 

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {%block content %}
 
@@ -12,6 +13,12 @@
 <h2><center><button class= "button button3"><a href = "{%url 'JadeHome' %}">Jade</a></button></center></button></h2>
 
 <h2><center><button class= "button button4"><a href = "{%url 'SubZeroHome' %}">Sub Zero</a></center></button></h2>
+<center>
+<img src = "{% static 'css/images/KanoSelect.png' %}">
+<img src = "{% static 'css/images/NightwolfSelectScreen.png' %}">
+<img src = "{% static 'css/images/JadeSelect.png' %}">
+<img src = "{% static 'css/images/SubZeroSelect.png' %}">
+</center>
 
 <p><center><a href = "{% url 'home' %}">Home </center></a></p>
 
