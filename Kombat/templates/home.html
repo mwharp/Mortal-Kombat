@@ -4,20 +4,24 @@
 
 <h1><center>Prepare for Mortal Kombat</center></h1>
 <h1><center><b>THIS IS A SCHOOL PROJECT</b></center></h1>
-<p><center>Welcome to Mortal Kombat! Here you will learn how to play Mortal Kombat 11, and how to get to the top by learning about fighting game terminology
-    and using the frames of your prefered character and your opponent's frames to your advantage to acheive victory.</center>
+<p class="main">Welcome to Mortal Kombat! Here you will learn how to play Mortal Kombat 11, and how to get to the top by learning about fighting game terminology
+    and using the frames of your prefered character and your opponent's frames to your advantage to acheive victory.
 </p>
 
-<p><center>To prepare you to learn more about the history and the science behind Mortal Kombat, here's the Mortal Kombat theme to pump you up!</p></center>
+<p class="main">To prepare you to learn more about the history and the science behind Mortal Kombat, here's the Mortal Kombat theme to pump you up!</p>
 
-<p><center><a href="https://www.youtube.com/watch?v=EAwWPadFsOA">MORTAL KOMBAT!</center></a></p>
-<center>
-<h1><a href = "{% url 'about' %}"> About </a></h1>
+<h1><a href="https://www.youtube.com/watch?v=EAwWPadFsOA">MORTAL KOMBAT!</a></h1>
 
-<h2><a href = "{% url 'character' %}">Character</a></h2>
+<footer>
+<h2>
+    <a href = "{% url 'about' %}">  About </a>
 
-<h2><a href = "{% url 'frames' %}">Frames </a></h2>
+    <a href = "{% url 'character' %}"> Character </a>
 
-</center>
+    <a href = "{% url 'frames' %}"> Frames </a>
+</h2>
+</footer>
+
+
 
 {% endblock %}

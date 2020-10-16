@@ -4,7 +4,7 @@
 
 <h1><center>Sub Zero</center></h1>
 <center><img src = "{% static 'css/images/SubZeroVersus.png' %}"></center>
-<p> The grandmaster of the Lin Kuei. Sub-Zero practices the art of cryomancy to freeze his foes to protect the realm of Earth. Sub-Zero
+<p class="main"> The grandmaster of the Lin Kuei. Sub-Zero practices the art of cryomancy to freeze his foes to protect the realm of Earth. Sub-Zero
     uses his excellent mix-ups to keep the opponent guessing on where they should block next.
 </p>
 
@@ -207,9 +207,10 @@
     </center>
 
 
-
-<p><a href = "{% url 'home' %}">Home </a></p>
-<p><a href = "{% url 'character' %}">Character </a></p>
-<p><a href = "{% url 'frames' %}">Frames </a></p>
+<footer>
+    <h2><a href = "{% url 'home' %}">Home </a></h2>
+    <h2><a href = "{% url 'character' %}">Character </a></h2>
+    <h2><a href = "{% url 'frames' %}">Frames </a></h2>
+</footer>
 
 {% endblock %}

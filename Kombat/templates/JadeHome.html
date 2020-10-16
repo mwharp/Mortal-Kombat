@@ -4,7 +4,7 @@
 
 <h1><center>Jade</center></h1>
 <center><img src = "{% static 'css/images/JadeVersus.png' %}"></center>
-<p> Edenia's greatest assasssin and bodyguard for the throne of outworld, Jade uses her bo staff and razer rangs to control the pace of a fight
+<p class="main"> Edenia's greatest assasssin and bodyguard for the throne of outworld, Jade uses her bo staff and razer rangs to control the pace of a fight
     and frustrate her opponent.
 </p>
 
@@ -220,9 +220,10 @@
 
 
 
-
-     <p><a href = "{% url 'home' %}">Home </a></p>
-     <p><a href = "{% url 'character' %}">Character </a></p>
-     <p><a href = "{% url 'frames' %}">Frames </a></p>
+<footer>
+    <h2><a href = "{% url 'home' %}">Home </a></h2>
+    <h2><a href = "{% url 'character' %}">Character </a></h2>
+    <h2><a href = "{% url 'frames' %}">Frames </a></h2>
+</footer>
 
 {% endblock %}

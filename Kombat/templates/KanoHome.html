@@ -6,7 +6,7 @@
 <h1><center>Kano</center></h1>
 <body>
     <center><img src = "{% static 'css/images/KanoVersus.png' %}"></center>
-    <p> Kano is the leader of the organized crime syndicate known as the Black Dragon. Known as a scoundrel, a backstabber,
+    <p class="main"> Kano is the leader of the organized crime syndicate known as the Black Dragon. Known as a scoundrel, a backstabber,
          and a thorn in the side of the Special Forces, Kano specializes in fighting dirty with his knives and his cybernetic enhancemnets to
         make him a nightmare to play againist if you are unaware of the dirty tricks he has up his sleeve. </p>
 
@@ -230,8 +230,10 @@
 
 
 
-<p><a href = "{% url 'home' %}">Home </a></p>
-<p><a href = "{% url 'character' %}">Character </a></p>
-<p><a href = "{% url 'frames' %}">Frames </a></p>
+<footer>
+    <h2><a href = "{% url 'home' %}">Home </a></h2>
+    <h2><a href = "{% url 'character' %}">Character </a></h2>
+    <h2><a href = "{% url 'frames' %}">Frames </a></h2>
+</footer>
 
 {% endblock %}
